@@ -1,0 +1,26 @@
+{
+  "name": "leap-instructions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "gatsby clean",
+    "build": "gatsby build --prefix-paths",
+    "dev": "gatsby develop",
+    "start": "yarn run dev"
+  },
+  "author": "sampoder",
+  "license": "MIT",
+  "dependencies": {
+    "@hackclub/theme": "^0.3.0",
+    "gatsby": "^2.24.58",
+    "gatsby-plugin-react-helmet": "^3.3.13",
+    "gatsby-theme-mdx-deck": "^4.1.0",
+    "prismjs": "^1.21.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-simple-code-editor": "^0.11.0",
+    "react-syntax-highlighter": "^13.5.1"
+  }
+}

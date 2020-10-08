@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+      format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes fadeInFirst {
+  from {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+}
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInSlide {
+  from {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+}
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInSecond {
+  from {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0;
+}
+  to {
+      opacity: 1;
+  }
+}
+
+
+.subtitleAnimate {
+  animation: fadeInFirst 1s linear;
+}
+
+.titleAnimate {
+  animation: fadeInSecond 4s linear;
+}
+
+.slideAnimate {
+  animation: fadeInSlide 1s linear;
+}
+
+.instructAnimate {
+  animation: fadeInSecond 4s linear;
+}
+
+/*
+Safari has a rendering bug that sometimes prevented text from rendering on certain slides.
+This is a hack that forces each new page to re-render.
+*/
+* {
+  -webkit-transform: translate3d(0,0,0);
+}
+
+body {
+  margin: 0;
+}
+
+pre,
+code {
+  font-family: "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: #e0e6ed !important;
+  color: #a633d6;
+  padding: 0 0.25em;
+  margin: 0 0.25em;
+  border-radius: 0.25em;
+}
+
+pre {
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+pre > code {
+  color: #a633d6 !important;
+}
+pre > code,
+.npm__react-simple-code-editor__textarea + pre {
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
