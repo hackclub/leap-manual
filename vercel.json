@@ -2,5 +2,8 @@
   "public": true,
   "github": {
     "silent": true
-  }
+  },
+  "redirects": [
+    { "source": "/", "destination": "/leap" }
+  ]
 }
