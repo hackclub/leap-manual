@@ -1,4 +1,3 @@
-import base from "@hackclub/theme";
 // import { highlight } from '@mdx-deck/themes'
 import { merge } from "theme-ui";
 
@@ -64,9 +63,9 @@ const theme = {
   },
   fonts: {
     heading:
-      '"Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      '-apple-system, BlinkMacSystemFont, "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
     body:
-      '"Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      '-apple-system, BlinkMacSystemFont, "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
     monospace: '"SF Mono", "Roboto Mono", Menlo, Consolas, monospace',
   },
   lineHeights: {
@@ -534,7 +533,7 @@ const themeAlt = merge.all(
   // highlight,
   {
     useColorSchemeMediaQuery: false,
-    fonts: base.fonts,
+    fonts: theme.fonts,
     styles: {
       Slide: {
         fontSize: [3, 4],
