@@ -538,7 +538,7 @@ const themeAlt = merge.all(
       Slide: {
         fontSize: [3, 4],
         textAlign: "left",
-        width: "80%",
+        width: "100%",
         maxWidth: "100%",
         marginLeft: 'auto',
         marginRight: 'auto'
